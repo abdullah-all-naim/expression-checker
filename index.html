@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<body class="container mx-auto">
+    <div class="text-center">
+        <h2>Expression Validator Online</h2>
+        <div class='text-left header-box' style='width: 600px; margin: 50px auto;'>
+            <h5 class='text-center my-3'>which type of expression do you want to validate?</h5>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id='email-box' value="option1">
+                <label class="form-check-label" for="exampleRadios1">
+                    <h4>Email</h4>
+                </label>
+                <div class="form-group row my-3" id='check-email' style="display: none;">
+                    <div class="col-md-8">
+                        <input type="email" class="form-control" id="input-email" placeholder="Enter an email address">
+                    </div>
+                    <button class="btn btn-primary" id="email-check-btn">validate</button>
+                </div>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="phone-box" value="option1">
+                <label class="form-check-label" for="exampleRadios1">
+                    <h4>Phone Number</h4>
+                </label>
+                <div class="form-group row my-3" id='check-phone' style="display: none;">
+                    <div class="col-md-8">
+                        <input type="text" class="form-control" id="input-phone" placeholder="Enter a phone number">
+                    </div>
+                    <button class="btn btn-primary" id='phone-check-btn'>validate</button>
+                </div>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="post-box" value="option1">
+                <label class="form-check-label" for="exampleRadios1">
+                    <h4>Post Code</h4>
+                </label>
+                <div class="form-group row my-3" id='check-post' style="display: none;">
+                    <div class="col-md-8">
+                        <input type="email" class="form-control" id="input-post" placeholder="Enter a post code">
+                    </div>
+                    <button class="btn btn-primary" id='post-check-btn'>validate</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
